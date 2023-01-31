@@ -21,7 +21,7 @@ No values got changed because each time add-message was called, if parameter[0] 
 # Part 2: Bugs from lab3
   
 When I tried running testReserve, it failed and gave return "arrays first differed at element [0]; expected:[4] but was:[0]"
-![Image](https://github.com/Zarkaine/labreport2/blob/main/images/reverseTestFail.png)
+![Imgur](https://i.imgur.com/NY6AC99.png)
   
 
 Because the code was
