@@ -21,19 +21,20 @@ No values got changed because each time add-message was called, if parameter[0] 
 # Part 2: Bugs from lab3
   
 I tested reversed(int[] arr) with the default testReverse()
-'
+'''
  @Test
   public void testReversed() {
     int[] input1 = { 1, 2, 3, 4 };
     assertArrayEquals(new int[] { 4, 3, 2, 1 }, ArrayExamples.reversed(input1));
   }
+ '''
  
 But as shown below, it failed and gave return "arrays first differed at element [0]; expected:[4] but was:[0]"
 ![Imgur3](https://imgur.com/NY6AC99.png)
   
 Before any changes, it looked like this:
   
-' 
+''' 
   static int[] reversed(int[] arr) {
   
         int[] newArray = new int[arr.length];
@@ -47,12 +48,13 @@ Before any changes, it looked like this:
         return arr;
                                          
     }
-                                       
+   '''
+         
 There were two bugs in this. The first bug for this code was copying from newArray to arr instead of arr to newArray. The symptom that resulted was having the incorrect values, in this case null.  The second bug was returning the wrong array. After creating a new array that is the reverse of the first, we wanted to return the new array, but instead the original array is returned. The symptom of this is simply incorrect output, even if the first bug is fixed.
                                        
 To fix the first bug, I simply swapped arr & newArray in the for loop. To fix the second bug, I changed the return statment to return the newArray. These changes are shown in the code below:
                                        
- '                               
+ '''                               
   int[] newArray = new int[arr.length];
                                         
     for (int i = 0; i < arr.length; i++) {
@@ -62,7 +64,7 @@ To fix the first bug, I simply swapped arr & newArray in the for loop. To fix th
     }
   
     return newArray;`
-  
+  '''
   
 So now, the method fufills the intended purpose of creating & returning a new array that is the reverse of the original. This is because it copies the elements of arr into newArray properly, and returns newArray as intended.
   
