@@ -18,7 +18,7 @@ The relevant arguments for this methods were
 No values got changed because each time add-message was called, if parameter[0] was "s", then parameter[1] was added to the arrayList. Then to the string, and the string was returned. The only value that would've been changed is the string that comes after /add-messsage?s=<string>.
 
   
-#Part 2: Bugs from lab3
+# Part 2: Bugs from lab3
   
 When I tried running testReserve, it failed and gave return "arrays first differed at element [0]; expected:[4] but was:[0]"
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/images/reverseTestFail.png)
@@ -56,4 +56,4 @@ This code was failing because it was trying to copy the elements of newArray to 
   
 So now, the elements in arr were being copied into newArray (in reverse order), and newArray was being returned.
   
-#Part 3: I learned a lot this week. For one, I learned how to make a server in java and use the URI methods. I also learned how to use Junit tests which I can only imageine would be very helpful. 
+# Part 3: I learned a lot this week. For one, I learned how to make a server in java and use the URI methods. I also learned how to use Junit tests which I can only imageine would be very helpful. 
