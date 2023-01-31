@@ -33,6 +33,7 @@ But as shown below, it failed and gave return "arrays first differed at element 
   
 Before any changes, it looked like this:
   `
+ 
   static int[] reversed(int[] arr) {
   
         int[] newArray = new int[arr.length];
