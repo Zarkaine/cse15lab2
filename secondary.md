@@ -32,7 +32,7 @@ I tested reversed(int[] arr) with the default testReverse()
 </code></pre>
 
 But as shown below, it failed and gave return "arrays first differed at element [3]; expected:[2] but was:[4]"
-![Junit test fail](https://imgur.com/gallery/7En4gOl)
+![Junit test fail](https://imgur.com/AIPbnF8.png)
 
  But if you changed the input to an array that was parrallel, it would pass. For instance, below
   <pre><code>
@@ -45,7 +45,7 @@ But as shown below, it failed and gave return "arrays first differed at element 
   </code></pre>
  
  Here is a screenshot of the test passing, despite the bug not being fixed
- ![Junit false pass](https://imgur.com/gallery/Wwd6feT)
+ ![Junit false pass](https://imgur.com/IPIGPwG.png)
   
 Before any changes, it looked like this:
   
