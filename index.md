@@ -1,4 +1,4 @@
-## This is lab report #2 (update 5)
+## This is lab report #2 (update 7)
 
 # Part 1: StringServer
 First I had to create the server. I did this with the method given before for numberServer. I created an int called port, and called Server.start(port, new StringServerHandler()); StringServerHandler implements URLHandler. It has 3 instance variables, 2 arrayLists and one String. StringServerHandler has a single method, handleRequest. This method returns a String, and takes a URI as the argument. If the user adds "/add-message?s=<string>" to the url, it will then display the string, as shown below.
@@ -56,7 +56,7 @@ To fix the first bug, I simply swapped arr & newArray in the for loop. To fix th
     return newArray;`
   
   
-So now, the elements in arr were being copied into newArray (in reverse order), and newArray was being returned.
+So now, the method fufills the intended purpose of creating & returning a new array that is the reverse of the original. This is because it copies the elements of arr into newArray properly, and returns newArray as intended.
   
 # Part 3: What I learned
-I learned a lot this week. For one, I learned how to make a server in java and use the URI methods. I also learned how to use Junit tests which seems to be very helpful. The types of errors that I can catch using Junit tests are what usually send me to the cse basement for tutors, which usually have a long wait.
+I learned a lot this week. For one, I learned how to make a server in java and use the URI methods. I also learned how to use Junit tests which seems to be very helpful. The types of errors that I can catch using Junit tests are what usually send me to the cse basement for tutors, which usually have a long wait. So now I can solve more issues on my own, and reduce the amount of time I stare at Gradescope in frustration.
