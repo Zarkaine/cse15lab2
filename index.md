@@ -1,4 +1,4 @@
-## This is lab report #2 (update 7)
+## This is lab report #2 (update 8)
 
 # Part 1: StringServer
 First I had to create the server. I did this with the method given before for numberServer. I created an int called port, and called Server.start(port, new StringServerHandler()); StringServerHandler implements URLHandler. It has 3 instance variables, 2 arrayLists and one String. StringServerHandler has a single method, handleRequest. This method returns a String, and takes a URI as the argument. If the user adds "/add-message?s=<string>" to the url, it will then display the string, as shown below.
@@ -20,11 +20,18 @@ No values got changed because each time add-message was called, if parameter[0] 
   
 # Part 2: Bugs from lab3
   
-When I tried running testReserve, it failed and gave return "arrays first differed at element [0]; expected:[4] but was:[0]"
+I tested reversed(int[] arr) with the default testReverse()
+'
+ @Test
+  public void testReversed() {
+    int[] input1 = { 1, 2, 3, 4 };
+    assertArrayEquals(new int[] { 4, 3, 2, 1 }, ArrayExamples.reversed(input1));
+  }
+ 
+But as shown below, it failed and gave return "arrays first differed at element [0]; expected:[4] but was:[0]"
 ![Imgur3](https://imgur.com/NY6AC99.png)
   
-
-Because the code was
+Before any changes, it looked like this:
   `
   static int[] reversed(int[] arr) {
   
