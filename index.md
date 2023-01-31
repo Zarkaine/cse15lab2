@@ -32,8 +32,8 @@ But as shown below, it failed and gave return "arrays first differed at element 
 ![Imgur3](https://imgur.com/NY6AC99.png)
   
 Before any changes, it looked like this:
-  `
- 
+  
+' 
   static int[] reversed(int[] arr) {
   
         int[] newArray = new int[arr.length];
@@ -52,7 +52,7 @@ There were two bugs in this. The first bug for this code was copying from newArr
                                        
 To fix the first bug, I simply swapped arr & newArray in the for loop. To fix the second bug, I changed the return statment to return the newArray. These changes are shown in the code below:
                                        
-       `                                 
+ '                               
   int[] newArray = new int[arr.length];
                                         
     for (int i = 0; i < arr.length; i++) {
